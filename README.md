@@ -1,26 +1,79 @@
-﻿# rest_api_django
+# Paso a Paso para Configurar Proyecto Django Rest Framework
 
-#api simple en django con django rest framework, fuinciona con el repo de ionic first fly
+1. **Instalar Python:**
+   - Descargar e instalar Python desde [python.org](https://www.python.org/).
 
+2. **Instalar Django:**
+   ```bash
+   pip install django
 
-paso a paso
+    Instalar paquetes adicionales:
+        Instalar los paquetes necesarios como mysqlclient, virtualenv, etc.
 
-install python
-install django
-install paquetes(mysqlclient, virtualenv, ...)
-python -m virtualenv venv #crear entorno virtual 
-.\venv\Scripts\activate #activar el entorno virtual
-pip install Django #instalamos django en el ev
-django-admin startproject drf . #cremos el proyecto de django rest framework
-django-admin startapp api #creamos api 
-creo modelos y mierdas varias 
-python manage.py migrate #se crea la base de datos de sqlite3 -por defecto 
-python manage.py makemigrations #creamos migracion para los modelos 
-python manage.py migrate #aplica migracion dentro de la bbdd
-python manage.py createsuperuser #admin admin
-python manage.py runserver #ejecutamos el servidor de desarrollo
-http://localhost:8000/admin/login/?next=/admin/ #admin panel 
+    Crear y activar entorno virtual:
+
+    bash
+
+python -m virtualenv venv  # Crear entorno virtual
+.\venv\Scripts\activate    # Activar el entorno virtual en Windows
+
+Instalar Django dentro del entorno virtual:
+
+bash
+
+pip install Django
+
+Crear el proyecto Django Rest Framework:
+
+bash
+
+django-admin startproject drf .
+
+Crear una aplicación dentro del proyecto:
+
+bash
+
+django-admin startapp api
+
+Definir modelos y realizar otras configuraciones necesarias.
+
+Migrar la base de datos inicial:
+
+bash
+
+python manage.py migrate
+
+Crear migraciones para los modelos definidos:
+
+bash
+
+python manage.py makemigrations
+
+Aplicar las migraciones en la base de datos:
+
+bash
+
+python manage.py migrate
+
+Crear un superusuario para acceder al panel de administración:
+
+bash
+
+python manage.py createsuperuser
+
+Iniciar el servidor de desarrollo:
+
+bash
+
+python manage.py runserver
+
+Acceder al panel de administración:
+
+    Abre tu navegador y visita http://localhost:8000/admin/login/?next=/admin/.
+
+Instalar Django REST framework y otras dependencias:
+
+bash
+
 pip install djangorestframework
-#creo serializer
-#creo fichero urls y edito el otro urls
-python -m pip install django-cors-headers #instalo cors-headers
+python -m pip install django-cors-headers
