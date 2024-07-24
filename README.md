@@ -18,7 +18,7 @@ django-admin startproject drf . #cremos el proyecto de django rest framework
 
 django-admin startapp api #creamos api 
 
-creo modelos y mierdas varias 
+creo modelos y serializers
 
 python manage.py migrate #se crea la base de datos de sqlite3 -por defecto 
 
