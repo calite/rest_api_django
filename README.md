@@ -14,6 +14,8 @@ python -m virtualenv venv #crear entorno virtual
 
 pip install Django #instalamos django en el ev
 
+pip install djangorestframework
+
 django-admin startproject drf . #cremos el proyecto de django rest framework
 
 django-admin startapp api #creamos api 
